@@ -1,3 +1,6 @@
+@import "_btnConfig.scss";
+@import "_config";
+@import "_utilities";
 
 * {
   box-sizing: border-box;
@@ -19,15 +22,36 @@ a {
   text-decoration: none;
 }
 
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+  }
+
+  li { display: inline-block; }
+
+  a {
+    display: block;
+    border: solid black 1px;
+    margin: 20px 10px;
+    padding: 10px 12px;
+    text-decoration: none;
+  }
+}
+
 .hero {
-  // This is where the bulk of the SCSS styling needs to be done
-
-  // Take a look at the other files we've built already. How can they be useful here?
-
-  // Also, take time to review the features of SCSS we've already covered:
-  // 1. $variables
-  // 2. nesting (dont forget about the ampersand (&) parent selector!)
-  // 3. At-Rules
+  background-position: center;
+        padding-top: 10px;
+        padding-bottom: 140px;
+        text-align: center;
+        h1 {
+            font-size: 50px;
+            max-width: 300px;
+            margin: 30px auto 1rem;
+            color: white;
+        }
 }
 
 // This code is related to some of the aspects of SCSS we have yet to cover.
